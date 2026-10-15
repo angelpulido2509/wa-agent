@@ -1,0 +1,37 @@
+# Dependencias y build
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+coverage/
+
+# Variables de entorno (secretos). Solo se versiona la plantilla.
+.env
+.env.*
+!.env.example
+
+# Sesión de WhatsApp (Baileys): credenciales y claves del dispositivo vinculado
+auth/
+
+# Datos locales: base SQLite con conversaciones y logs
+data/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.log
+*.out
+
+# Reportes generados por las pruebas
+reportes/
+
+# Claves privadas / certificados
+*.pem
+*.key
+*.p12
+
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
